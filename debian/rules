@@ -5,6 +5,10 @@
 %:
 	dh $@
 
+ifeq (,$(filter noudeb,$(DEB_BUILD_PROFILES)))
+  with_udeb = yes
+endif
+
 ARCH=$(shell dpkg-architecture -qDEB_HOST_ARCH_CPU)
 ifneq (,$(filter i386 amd64,$(ARCH)))
 ARCH=x86
@@ -39,4 +43,6 @@ override_dh_install:
 ifeq ($(ARCH),x86)
 	dh_install os-probes/mounted/powerpc/20macosx usr/lib/os-probes/mounted
 endif
+ifeq ($(with_udeb),yes)
 	cp -a debian/os-prober-udeb/usr/lib debian/os-prober/usr/
+endif

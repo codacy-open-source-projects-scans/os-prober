@@ -1,3 +1,10 @@
+os-prober (1.83) unstable; urgency=medium
+
+  [ Matthias Klose ]
+  * Support the noudeb profile (closes: #983325).
+
+ -- Colin Watson <cjwatson@debian.org>  Wed, 28 Aug 2024 11:16:14 +0100
+
 os-prober (1.82) unstable; urgency=medium
 
   * Team upload

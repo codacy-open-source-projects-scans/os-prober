@@ -10,6 +10,7 @@ Vcs-Git: https://salsa.debian.org/installer-team/os-prober.git
 
 Package: os-prober-udeb
 Package-Type: udeb
+Build-Profiles: <!noudeb>
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, di-utils-mapdevfs, anna, grub-mount-udeb [linux-any kfreebsd-any]
 Provides: os-prober
