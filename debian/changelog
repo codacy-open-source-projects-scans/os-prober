@@ -1,8 +1,10 @@
-os-prober (1.84) UNRELEASED; urgency=medium
+os-prober (1.84) unstable; urgency=medium
+
+  * Team upload
 
   * Change install path, to make package usrmerge-compliant.
 
- -- Holger Wansing <hwansing@mailbox.org>  Sat, 11 Oct 2025 12:53:09 +0200
+ -- Holger Wansing <hwansing@mailbox.org>  Tue, 25 Nov 2025 22:56:51 +0100
 
 os-prober (1.83) unstable; urgency=medium
 
